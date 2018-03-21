@@ -1,0 +1,28 @@
+﻿@model List<BrnoMvc1.Web.Models.MovieViewModel> 
+
+@{
+    ViewBag.Title = "_Grid";
+}
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>SelectGenres</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.SelectGenres</td>
+            <td>@Html.ActionLink("Detail filmu","Details", "Movies", new {item.Id}, null)</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

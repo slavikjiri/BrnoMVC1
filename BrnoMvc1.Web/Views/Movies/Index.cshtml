@@ -1,0 +1,24 @@
+﻿@model List<BrnoMvc1.Web.Models.MovieViewModel>
+
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+}
+
+@*<h2>@Model.Title</h2>
+    <h2>@Model.SelectGenres</h2>*@
+
+@*@Html.Partial("_Grid", Model)*@
+
+<h2>@ViewBag.Nadpis</h2>
+
+<h2>@ViewData["Dict"]</h2>
+
+<h2>@TempData["Dict3"]</h2>
+
+@Html.Action("_Grid", Model)
+
+
+
+

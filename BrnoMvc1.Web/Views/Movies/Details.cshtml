@@ -1,0 +1,27 @@
+﻿@model BrnoMvc1.Web.Models.MovieViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>SelectGenres</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            @*<td>@Model.SelectGenres</td>
+        <td>@Model.Desription</td>*@
+            <td>
+                @Html.DisplayFor(x => x.Title)
+                @Html.DisplayFor(x => x.SelectGenres)
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
